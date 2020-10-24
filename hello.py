@@ -1,5 +1,5 @@
 import unittest
-from module import get_sum
+from module import get_sum, print_some
 
 class Test(unittest.TestCase):
     
@@ -7,6 +7,9 @@ class Test(unittest.TestCase):
         result = get_sum(10, 11)
         self.assertEqual(result, 21)
     
+    def test_print_some(self):
+        result = print_some('hello')
+        self.assertEqual(isinstance(result, string), True)
 
 
 
