@@ -8,7 +8,7 @@ class Test(unittest.TestCase):
         self.assertEqual(result, 21)
     
     def test_print_some(self):
-        result = print_some('hello')
+        result = print_some(12)
         self.assertEqual(isinstance(result, str), True)
 
 
